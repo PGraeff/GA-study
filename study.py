@@ -6,9 +6,10 @@ class Vector():
         self.y = y
         self.z = z
 
+
     def add(self, other):
 
-        f
+        pass
 
 
 a = Vector(2, 3, 4)
