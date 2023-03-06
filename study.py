@@ -2,8 +2,8 @@ import numpy as np
 import math as mt
 
 class Vector():
-    def __init__(self, x, y, z):
-        self.vectorobj = [x, y, z]    
+    def __init__(self, vector):
+        self.vectorobj = vector   
 
     # Vector addition, returns a new vector that is the some of the object and an external vector
     def add(self, others):
@@ -28,8 +28,8 @@ class Vector():
         return  self.norm
 
 
-a = Vector(2, 3, 4)
-b = Vector(7, 6, 5)
+a = Vector([2, 3, 4])
+b = Vector([7, 6, 5])
 
 print(a.add(b.vectorobj))
 print(a.get_norm())
