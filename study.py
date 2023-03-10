@@ -2,8 +2,8 @@ import numpy as np
 import math as mt
 
 class Vector():
-    def __init__(self, vector):
-        self.vectorobj = vector   
+    def __init__(self, x, y, z):
+        self.vectorobj = [x, y, z]   
 
     # this function performs vector addition, returns a new vector that is the some of the object and an external vector
     def add(self, others):
@@ -42,6 +42,36 @@ class Vector():
         self.norm2 = other.get_norm()
         self.theta_cosine = self.scalar / (self.norm1 * self.norm2) 
         return self.theta_cosine     
+
+class Solver():
+    def __init__(self):
+        pass
+
+
+
+class Straight():
+    def __init__(self):
+        
+        pass
+
+
+    def get_straight_equation(self):
+        # 2 points
+        # 1 point, 1 Vector (straight passes through the point and is paralels to the direction)
+        pass
+
+
+class Plane():
+
+    def get_plane_equation(self):
+        # 3 points (forms a triangle)
+        # 2 paralel Vectors and 1 point
+        # 1 Vector normal to the plane and one point
+        
+        pass
+
+
+
 
 a = Vector([2, 3, 4])
 b = Vector([7, 6, 5])
